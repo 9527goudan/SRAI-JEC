@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="nebula_command_system" type="standAloneUdp_node" name="standAloneUdp_node" output="screen" respawn="true">
+    <param name="IP"   type="str"  value="192.168.0.86" />      <!--UDP服务器IP-->
+    <param name="PORT" type="int"  value="6000" />              <!--UDP服务器端口-->
+    <remap from="UDP_cmd_vel"  to="smooth_cmd_vel"/>
+    </node>
+</launch>

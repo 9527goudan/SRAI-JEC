@@ -1,0 +1,45 @@
+
+谁  什么时间  做了什么
+
+---------------- 2023-08-25:14:48:57 ----------------
+[ nodeName ] time:
+{
+    "msgLog_N" : "",
+    "Error" : "true",
+    "ErrorMsg" : ""
+}
+---------------- END ----------------
+
+---------------- 2023-8-31 / 13:59:31 ----------------
+{
+	"Error" : 0,
+	"ErrorMsg" : "",
+	"msgLog" : "no Error",
+	"nodeName" : "srbotNode",
+	"time" : "14:0:23"
+}
+
+---------------- 2023-8-31 / 15:8:39 ----------------
+{
+	"Error" : 1,
+	"ErrorMsg" : "log file open error",
+	"msgLog" : "",
+	"nodeName" : "srbot_err_node",
+	"time" : "15:10:12"
+}
+
+---------------- 2023-9-1 / 15:36:33 ----------------
+{
+	"Error" : 0,
+	"ErrorMsg" : "",
+	"msgLog" : "imu ok",
+	"nodeName" : "ImuNode",
+	"time" : "15:37:45"
+}
+{
+	"Error" : 1,
+	"ErrorMsg" : "66666",
+	"msgLog" : "imu packger",
+	"nodeName" : "ImuNode",
+	"time" : "15:38:53"
+}

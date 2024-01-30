@@ -1,0 +1,16 @@
+<launch>
+
+    <arg name="Path" value="$(find nebula_command_system)" />   <!-- 文件夹路径-->
+
+    <include file="$(find srbot_err)/launch/srbotError.launch"/>  <!--状态,异常信息收集-->
+
+    <node pkg="nebula_command_system" type="client_mqtt_node" name="client_mqtt_node" output="screen" respawn="true">
+    <param name = "FilePath"              type = "str"      value = "$(arg Path)/param/robot_ID.json" />  <!--保存文件-->
+    <param name = "MqttServerAddress"     type = "str"      value = "mqtt://120.55.164.135:1883" />       <!--mqtt 服务器地址-->
+    <param name = "MqttUserName"          type = "str"      value = "srai_client" />       <!--mqtt客户端用户名-->
+    <param name = "MqttUserword"          type = "str"      value = "srai_client" />       <!--mqtt客户端用户密码-->
+    <param name = "RobotClass"            type = "str"      value = "YSH-CIR01" />         <!--机器人分类-->
+    <param name = "MqttTopicPrefix"       type = "str"      value = "JEC" />               <!--mqtt话题前缀-->
+
+    </node>
+</launch>

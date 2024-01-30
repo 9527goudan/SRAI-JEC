@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="srbot_err" type="srbot_err_node" name="srbot_err_node" output="screen">
+        <param name="LogPath"   type="str"  value="$(find srbot_err)/log/" />
+    </node>
+</launch>
